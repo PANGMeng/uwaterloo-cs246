@@ -1,0 +1,1 @@
+egrep "^(#include)" myfile.cc | head
