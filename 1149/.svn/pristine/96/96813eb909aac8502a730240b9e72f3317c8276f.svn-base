@@ -1,0 +1,228 @@
+<!--
+To check for valid form: http://validator.w3.org
+To check for broken links: http://validator.w3.org/checklink
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <style type="text/css">strong { color: red; }</style>
+  <title>CS 246 Object-Oriented Software Development</title>
+</head>
+<body>
+
+<!--#include virtual="common/header.html"-->
+
+<p style="font-weight: bold">
+Supported by the <a href="https://cs.uwaterloo.ca/isg/">Instructional Support Group</a>
+</p>
+
+<p>
+<a href="http://uwaterloo.ca/">University of Waterloo</a> :
+<a href="http://www.math.uwaterloo.ca/">Faculty of Mathematics</a> :
+<a href="https://cs.uwaterloo.ca/">School of Computer Science</a>
+</p>
+
+<hr/>
+
+<table style="width: 100%; vertical-align: top">
+<tr>
+  <td style="vertical-align: top">
+<!--
+    <p style="font-weight: bold">
+      Link to <a href="http://plg.uwaterloo.ca/~holt/cs/246/2011/">Winter 2011 page</a>.
+    </p>
+-->
+
+    <h2>Current Term (Spring 2014)</h2>
+    <ul>
+      <li><a href="current/people.shtml">People</a> (contact information; office hours)</li>
+      <li><a href="current/tutorials.shtml">Tutorials</a></li> 
+      
+      <!-- li><a href="current/lectures.shtml">Lecture Summary</a></li -->
+      <li><a href="current/marking.shtml">Marking</a>
+      
+         (<a href="https://www.student.cs.uwaterloo.ca/~cs246/cgi-bin/displayMarks.cgi"><strong>View Your Marks</strong></a>)</li>
+         <li><a href="https://markus.student.cs.uwaterloo.ca/markus_cs246_s">MarkUs</a> (handmarking feedback)</li>
+      <li><a href="https://marmoset.student.cs.uwaterloo.ca">Marmoset</a> </li>
+      <li><a name="assignments"></a><a href="current/assignments/index">Assignments</a></li>  
+      <li><a href="current/exams.shtml">Exams</a></li>
+      <li><a href="current/lectures.shtml">Lectures</a></li>
+      <li><a href="current/S14_CS246_CourseOutline.html">Course Outline</a></li>
+    </ul>
+
+  </td>
+  <td style="vertical-align: top">
+  <h2><a name="general"></a>General Information</h2>
+    <ul>
+    <li><a href="current/textbooks.shtml">Textbooks</a></li>
+      <li><a href="http://www.ucalendar.uwaterloo.ca/1314/COURSE/course-CS.html#CS246">Calendar Description</a></li>
+      <li><a href="https://cs.uwaterloo.ca/current/courses/course_descriptions/cDescr/newCDescr/CS246.shtml">Course Description / Objectives</a></li>
+      <li><a href="https://www.student.cs.uwaterloo.ca/~cssystem/Notes/notesindex.html">Learning</a></li>
+      <!--
+      Uncomment this point to access the cheating policy as a click through.
+      -->
+      <li><a href="common/AcademicIntegrity.shtml"><strong>Academic Integrity</strong></a></li>
+      <li><a href="https://www.student.cs.uwaterloo.ca/~isg/policies/">UW/CS Policies</a></li>
+      <!--
+      <li><a href="http://arts.uwaterloo.ca/arts/ugrad/academic_responsibility.html">Plagiarism</a></li>
+      -->
+      <li><a href="http://uwaterloo.ca/counselling-services/">Counselling Services</a></li>
+    </ul>
+  </td>
+</tr>
+</table>
+
+
+<hr/>
+<h2><a name="announcements"/>Announcements</h2>
+
+<p>
+Announcements are posted on <a href="http://piazza.com/class#fall2013/cs246">piazza</a>.
+<!-- Announcements are archived regularly throughout the term; <a href="current/announcements.shtml">view archived announcements</a>.-->
+</p>
+<!--
+<ul>
+<li><b>Wednesday 26 June:</b>Tutorial 6 Notes and Midterm Review powerpoint have been uploaded</li>
+<li><b>Tuesday 18 June:</b> Tutorial 5 Notes have been uploaded</li>
+<li><b>Tuesday 18 June:</b> Marmoset tests for Assignment 3 Due Date 2 are up.</li>
+<li><b>Thursday 13 June:</b> Tutorial 4 Notes have been uploaded</li>
+<li><b>Tuesday 11 June:</b> Marmoset tests for Assignment 3 Due Date 1 are up.</li>
+<li><b>Friday 7 June:</b> Assignment 3 is available on SVN </li>
+<li><b>Tuesday 28 May:</b> Marks for Assignment 1 have been posted.</li>
+<li><b>Tuesday 28 May:</b> All marmoset tests for Assignment 2 are up.</li>
+<li><b>Friday 24 May:</b> Assignment 2 has been added to SVN. </li>
+<li><b>Monday 13 May:</b> Marmoset tests for Assignment 1 are up. </li>
+<li><b>Friday 10 May:</b> Assignment 1 has been added to SVN.</li>
+<li><b>Thursday 9 May:</b> If you do not yet have access to Piazza because
+you have not yet joined the course, use access code <tt>CS 246</tt>.</li>
+<li><b>Monday 6 May:</b> Assignment 0 has been posted to Piazza.</li>
+<li><b>Monday 6 May:</b> The Unix handout has been posted to Piazza.</li>
+</ul>
+
+-->
+<!--
+<ul>
+Some Example Announcements
+<li><b>Wednesday 3 August:</b> Assignment 5 marks are posted online, make sure to verify that you have the correct mark and the same mark as your partner.</li>
+<li><b>Tuesday 2 August:</b> A reminder that remark requests for Assignments 4 and 5 are due on Wednesday August 10th.</li>
+<li><b>Monday 1 August:</b> Office hours are cancelled this week.</li>
+</ul>
+-->
+
+<h2>Resources</h2>
+
+<ol>
+  <li>General
+    <ul>
+      <li>Course Email Address <a href="mailto:cs246@student.cs.uwaterloo.ca"><tt>cs246@student.cs.uwaterloo.ca</tt></a>
+        - specific questions on course</li>
+<!--
+      <li><a href="current/vim_setup.shtml">Vim Setup</a>
+        - some recommended customizations for vim.</li>
+-->
+
+      <li><a href="current/notes.pdf">Old Course Notes</a></li> 
+      <li> <a href="current/codeExamples.shtml">Code Examples</a>
+        - some useful code examples</li>
+        <!--
+      <li><a href="https://www.student.cs.uwaterloo.ca/~cs343/doctestExamples.shtml">Testing/Documentation (CS343)</a></li>
+    -->
+      <li><a href="common/researchpapers.shtml">Research Papers</a></li>
+    <!--  <li><a href="http://www.math.uwaterloo.ca/~consulta/">MFCF Consultant</a> with link to their FAQ</li> -->
+    </ul>
+  </li>
+  <li>Unix Tools
+    <ul>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://proquest.safaribooksonline.com/0672324903">Unix Shell Programming</a> - eBook</li>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://proquest.safaribooksonline.com/0596009658">Learning the bash Shell</a> - eBook</li>
+      <li><a href="http://www.gnu.org/software/bash/manual/bash.pdf">Bash Reference Manual</a></li>
+      <li><a href="https://www.student.cs.uwaterloo.ca/~isg/res/unix/UNIX_ReferenceSheet.pdf">UNIX Quick Reference</a></li>
+      <li><a href="http://www.gnu.org/software/make/manual/make.pdf">Make Reference Manual</a></li>
+<!--      <li><a href="http://svnbook.red-bean.com/nightly/en/svn-book.pdf">SVN 1.6 Reference Manual</a></li> -->
+    </ul>
+  </li>
+  <li>C++
+    <ul>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://proquestcombo.safaribooksonline.com/059600298X">C++ in a Nutshell</a> - eBook</li>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://proquestcombo.safaribooksonline.com/0596004192">Practical C++ Programming</a> - eBook</li>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://www.netlibrary.com/AccessProduct.aspx?ProductId=140972">C++ Primer Plus</a> - eBook</li>
+      <li><a href="https://www.student.cs.uwaterloo.ca/~isg/res/cpp/">C++</a>
+        - Assignment guidelines, STL tutorials and a GDB tutorial.</li>
+        <!--
+      <li><a href="current/doctestExamples.shtml">Testing/Documentation</a>
+        - Testing strategies and documentation examples</li>
+      -->
+      <li><a href="https://www.student.cs.uwaterloo.ca/~cssystem/C++Tutorial.pdf">C++ Tutorial</a>
+         (<a href="https://www.student.cs.uwaterloo.ca/~cssystem/C++.workcode/">workcode</a>)
+      </li>
+      <li><a href="http://en.cppreference.com/w/">C++ Reference</a>
+         - Good C++ reference</li>
+      <li><a href="http://www.cplusplus.com">cplusplus.com</a>
+         - Another really good reference site.</li>
+      <li><a href="http://www.parashift.com/c++-faq-lite/">FAQ</a>
+        - Frequently asked questions regarding C++ <strong>(very useful)</strong></li>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://proquest.safaribooksonline.com.proxy.lib.uwaterloo.ca/0201379260">The C++ Standard Library</a> - eBook</li>
+<!--
+      <li><a href="http://www.sgi.com/tech/stl/">STL Programmer's Guide</a> </li>
+-->
+    <!--  <li><a href="http://en.cppreference.com/w/">C++ Standard Library</a></li>-->
+<!--
+      <li><a href="http://www.cs.brown.edu/people/jak/proglang/cpp/stltut/tut.html">More STL</a></li>
+-->
+      <li><a href="common/STLQuickReference1.29.pdf">STL Quick Reference</a></li>
+    </ul>
+  </li>
+  <li>Design Patterns
+    <ul>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://proquestcombo.safaribooksonline.com/0596007124">Head First Design Patterns</a> - eBook</li>
+      <li><a href="http://www.hillside.net/patterns/">Hillside.net</a></li>
+<!--
+      <li>See the course textbooks for the call number for the Gamma, Johnson, Helm and Vlissides book.</li>
+-->
+    </ul>
+  </li>
+  <li>UML
+    <ul>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://proquestcombo.safaribooksonline.com/0321245628">Unified Modeling Language Reference Manual</a> - eBook</li>
+      <li><a href="http://proxy.lib.uwaterloo.ca/login?url=http://www.netlibrary.com/AccessProduct.aspx?ProductId=100930">UML 2 for Dummies</a> - eBook</li>
+      <li><a href="http://www.omg.org/spec/UML/2.3/Infrastructure/PDF/">Unified Modeling Language Reference Manual (OMG UML) Version 2.3</a></li>
+      <li>UML Quick Reference (<a href="http://www.holub.com/goodies/uml/">HTML</a>, <a href="http://tnerual.eriogerg.free.fr/umlqrc.pdf">PDF)</a></li>
+      <li><a href="http://plg.uwaterloo.ca/~migod/uml.html">Little UML (Tools) Page</a>
+        - Some recommended UML Tools.</li>
+    </ul>
+  </li>
+<!--
+-->
+</ol>
+
+<!--
+<li><a href="/~isg/res/java/">Java</a> 
+- Information about the Java programming language.
+</li>
+-->
+<!--
+<li><a href="http://www.boost.org/">Boost.org - C++ libraries</a>
+</li>
+-->
+<!--
+<li><A href="http://www.gnu.org/manual/ddd/html_mono/ddd.html">DDD</a> 
+- Information on using DDD.
+</li>
+-->
+
+<!--
+Uncomment this section to place the cheating policy on the home page.
+Put comment symbols around include.
+<hr/>
+
+#include virtual="/~isg/policies/academic_integrity_include"
+-->
+
+<hr/>
+
+<!--#include virtual="common/footer.shtml"-->
+
+</body>
+</html>
