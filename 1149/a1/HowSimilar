@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "How similar are ${1} and ${2}?"
+
+variable=`cat ${1}`
+echo variable

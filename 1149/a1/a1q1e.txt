@@ -1,1 +1,1 @@
-egrep "(?i)linux.student.cs.uwaterloo.ca" myfile.txt | wc -l
+egrep "(?i)linux.student.cs.uwaterloo.ca" myfile.txt | wc -l | sed 's/^[ \t]*//'
