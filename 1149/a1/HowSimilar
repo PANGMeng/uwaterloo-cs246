@@ -1,5 +1,10 @@
 #!/bin/bash
-echo "How similar are ${1} and ${2}?"
-
-variable=`cat ${1}`
-echo variable
+if [[ -n $(diff ${1} ${2}) ]]; then
+	if [[ -n $(diff ${1} ${2} -i) ]]; then
+		echo "Different."
+	else
+		echo "Mostly the same."
+	fi
+else
+	echo "The same."
+fi
