@@ -1,0 +1,7 @@
+example
+oneCandidate
+allInvalid
+allValid
+noVotes
+noCandidates
+twoCandidatesOneGetsVotes

@@ -1,0 +1,8 @@
+example
+oneCandidate
+oneVoter
+oneCandidateOneVoter
+noVotes
+noValidVotes
+args
+negativeVotes

@@ -1,0 +1,7 @@
+3) a)
+Expected result: 1
+Actual result: 1.00005
+
+b)
+This difference is caused by significant figures. A variable of type float has a limited amount of space to store data. However, when a float is written to standard output, 5 digits are given after the decimal point. When the the program reaches the 5th digit after the decimal point, it has read past the data for the stored float and this creates unpredictable results for subsequent digits.
+This problem is solved by changing x and y to the variable type double.
