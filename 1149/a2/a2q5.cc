@@ -24,6 +24,9 @@ bool hasNumber(string str) {
 void readVotes() {
 	string str;
 	while (getline(cin, str)) {
+		if (str == "") {
+			continue;
+		}
 		if (voteMode || hasNumber(str)) { // If the line is votes
 			stringstream ss(str);
 
@@ -38,24 +41,40 @@ void readVotes() {
 			}
 
 			int vote; // Each number - temporarily stores output from string stream
-			int votes[CandidateNumber]; // keep track of votes to be added 
+			int lineVotes[CandidateNumber]; // keep track of votes to be added 
 			int total = 0;
 			int cand = 0;
 
 			while(ss >> vote) { // Collect vote data from tokenized input
-				votes[cand] = vote;
-				total += vote;
+				if (vote > 0) {
+					lineVotes[cand] = vote;
+					total += vote;
+				}
+				else {
+					lineVotes[cand] = 0;
+				}
 				cand++;
 			}
 
-			if (total <= X && total >= 0) { // Make sure vote is valid
+			#ifdef DEBUG
+				cerr << "number of Votes = " << total << endl;
+				cerr << "X = " << X << endl;
+			#endif
+
+			if (total <= X && total > 0 && cand == CandidateNumber) { // Make sure vote is valid
 				validVotes++;
 				while (cand >= 0) { // Add the stored votes to the tally
-					candidates[cand] += votes[cand];
+					votes[cand] += lineVotes[cand];
 					cand--;
 				}
+				#ifdef DEBUG
+					cerr << "Vote: VALID" << endl;
+				#endif
 			} else {
 				invalidVotes++;
+				#ifdef DEBUG
+					cerr << "Vote: INVALID" << endl;
+				#endif
 			}
 		} else {
 			candidates[CandidateNumber] = str;
@@ -69,14 +88,31 @@ void printResults() {
 	int voters = 0;
 
 	cout << "Number of voters: " << invalidVotes+validVotes << endl;
-	cout << "Number of valid votes: " << validVotes << endl;
-	cout << "Number of spoilt votes: " << invalidVotes << endl;
-	cout << left << setw(15) << "Candidate" << "Score" << endl;
+	cout << "Number of valid ballots: " << validVotes << endl;
+	cout << "Number of spoilt ballots: " << invalidVotes << endl;
+	cout << endl;
+	cout << left << setw(16) << "Candidate" << "Score" << endl;
+	cout << endl;
 	for (int i = 0; i < CandidateNumber; i++) {
-		cout << left << setw(15) << candidates[i];
+		cout << left << setw(16) << candidates[i];
 		cout << right << setw(3) << votes[i] << endl;
 	}
 };
+
+int atoi(char* s) {
+	int ret = 0;
+	if (*s >= '0' && *s <= '9') {
+		ret = *s - '0';
+		s++;
+	}
+	else {
+		return 0;
+	}
+	if (*s >= '0' && *s <= '9') {
+		ret = 10 * (ret) + (*s - '0');
+	}
+	return ret;
+}
 
 int main(int argc, char* argv[]) {
 	if (argc > 1) {
@@ -84,6 +120,7 @@ int main(int argc, char* argv[]) {
 	}
 	#ifdef DEBUG
 		cout << "argc = " << argc << endl;
+		cout << "X = " << X << endl;
 	#endif
 	readVotes();
 	printResults();
