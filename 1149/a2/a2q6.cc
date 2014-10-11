@@ -6,10 +6,19 @@ using namespace std;
 bool isNumber(string str) {
   stringstream ss(str);
   char c;
+  bool first = true;
   while(ss.get(c)) {
-    if (c < '0' || c > '9') {
-      return false;
+    if (first) {
+      if ((c < '0' || c > '9') && (c != '-')) {
+        return false;
+      }
+      first = false;
+    } else {
+      if (c < '0' || c > '9') {
+        return false;
+      }
     }
+    
   }
   return true;
 }
@@ -30,8 +39,25 @@ struct IntArray {
   int *contents;
 };
 
-void addToArray(int num, IntArray array) {
+void printIntArray(const IntArray& ia);
+
+void addToArray(int num, IntArray& array) {
+  #ifdef DEBUG
+    cout << "Trying to add: " << num << endl;
+  #endif
+  if (array.capacity == 0) {
+    array.capacity = 5;
+    array.contents = new int [5];
+    #ifdef DEBUG
+      cout << "\tCapacity: 0" << endl << "\tSetting Capacity to: 5" << endl;
+    #endif
+  }
   if (array.capacity <= array.size) { // Reallocate to a bigger array
+    #ifdef DEBUG
+      cout << "\tCapacity: " << array.capacity << endl;
+      cout << "\tSize: " << array.size << endl;
+      cout << "\tSetting Capacity to: " << (array.capacity)*2 << endl;
+    #endif
     int * temp = new int [array.capacity*2];
     int * newptr = temp;
     int * oldptr = array.contents;
@@ -42,21 +68,31 @@ void addToArray(int num, IntArray array) {
     }
     delete [] array.contents;
     array.contents = temp;
+    array.capacity *= 2;
   }
   array.contents[array.size] = num;
   array.size++;
+  #ifdef DEBUG
+    cout << "Potentially successful add. Printing for verification..." << endl;
+    printIntArray(array);
+  #endif
 }
 
 IntArray readIntArray() {
   string input;
   IntArray llama;
   llama.size = 0;
-  llama.capacity = 4;
-  llama.contents = new int [4];
+  llama.capacity = 0;
+  llama.contents = NULL;
   while(cin >> input) {
     if (isNumber(input)) {
       addToArray(strToNumber(input), llama);
     }
+    #ifdef DEBUG
+      if(input == "quitnow") {
+        break;
+      }
+    #endif
   }
   return llama;
 };
@@ -67,6 +103,12 @@ void addToIntArray(IntArray& ia) {
     if (isNumber(input)) {
       addToArray(strToNumber(input), ia);
     }
+
+    #ifdef DEBUG
+      if(input == "quitnow") {
+        break;
+      }
+    #endif
   }
 };
 
@@ -111,6 +153,19 @@ int main() {  // Test harness for IntArray functions.
         printIntArray(a[which-'a']);
         cout << "Capacity: " << a[which-'a'].capacity << endl;
         break;
+      #ifdef DEBUG
+      case 'e':
+        IntArray e;
+        e.size = 3;
+        e.capacity = 5;
+        e.contents = new int [5];
+        e.contents[0] = 3;
+        e.contents[1] = 2;
+        e.contents[2] = 9;
+        printIntArray(e);
+        cout << "Capacity: " << e.capacity << endl;
+        break;
+      #endif
       case 'q':
         done = true;
     }
