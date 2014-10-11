@@ -1,5 +1,28 @@
 #include <iostream>
+#include <string>
+#include <sstream>
 using namespace std;
+
+bool isNumber(string str) {
+  stringstream ss(str);
+  char c;
+  while(ss.get(c)) {
+    if (c < '0' || c > '9') {
+      return false;
+    }
+  }
+  return true;
+}
+
+int strToNumber(string str) {
+  stringstream ss(str);
+  int t;
+  if (ss >> t) {
+    return t;
+  } else {
+    return -1;
+  }
+}
 
 struct IntArray {
   int size;
@@ -7,11 +30,52 @@ struct IntArray {
   int *contents;
 };
 
-IntArray readIntArray();
+void addToArray(int num, IntArray array) {
+  if (array.capacity <= array.size) { // Reallocate to a bigger array
+    int * temp = new int [array.capacity*2];
+    int * newptr = temp;
+    int * oldptr = array.contents;
+    for (int i = 0; i < array.size && i < array.capacity; i++) {
+      *newptr = *oldptr;
+      newptr++;
+      oldptr++;
+    }
+    delete [] array.contents;
+    array.contents = temp;
+  }
+  array.contents[array.size] = num;
+  array.size++;
+}
 
-void addToIntArray(IntArray& ia);
+IntArray readIntArray() {
+  string input;
+  IntArray llama;
+  llama.size = 0;
+  llama.capacity = 4;
+  llama.contents = new int [4];
+  while(cin >> input) {
+    if (isNumber(input)) {
+      addToArray(strToNumber(input), llama);
+    }
+  }
+  return llama;
+};
 
-void printIntArray(const IntArray& ia);
+void addToIntArray(IntArray& ia) {
+  string input;
+  while(cin >> input) {
+    if (isNumber(input)) {
+      addToArray(strToNumber(input), ia);
+    }
+  }
+};
+
+void printIntArray(const IntArray& ia) {
+  for (int i = 0; i < ia.size; i++) {
+    cout << ia.contents[i] << " ";
+  }
+  cout << endl;
+};
 
 
 // Do not change this function!
