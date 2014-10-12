@@ -79,36 +79,35 @@ void addToArray(int num, IntArray& array) {
 }
 
 IntArray readIntArray() {
-  string input;
+  int input;
+  int keepgoing = 0;
   IntArray llama;
   llama.size = 0;
   llama.capacity = 0;
-  llama.contents = NULL;
-  while(cin >> input) {
-    if (isNumber(input)) {
-      addToArray(strToNumber(input), llama);
+  llama.contents = 0;
+  while(keepgoing <= 1) {
+    if (cin >> input) {
+      addToArray(input, llama);
+    } else {
+      cin.clear();
+      cin.ignore();
+      keepgoing++;
     }
-    #ifdef DEBUG
-      if(input == "quitnow") {
-        break;
-      }
-    #endif
   }
   return llama;
 };
 
 void addToIntArray(IntArray& ia) {
-  string input;
-  while(cin >> input) {
-    if (isNumber(input)) {
-      addToArray(strToNumber(input), ia);
+  int input;
+  int keepgoing = 0;
+  while(keepgoing <= 1) {
+    if (cin >> input) {
+      addToArray(input, ia);
+    } else {
+      cin.clear();
+      cin.ignore();
+      keepgoing++;
     }
-
-    #ifdef DEBUG
-      if(input == "quitnow") {
-        break;
-      }
-    #endif
   }
 };
 
