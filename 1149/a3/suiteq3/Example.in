@@ -1,0 +1,10 @@
+! alice
+! bob
+* alice bob alice
+! eve
+?
+* eve alice alice
+? alice
+?
+- alice
+?

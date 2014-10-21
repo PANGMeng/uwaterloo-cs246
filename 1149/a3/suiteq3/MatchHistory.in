@@ -1,0 +1,11 @@
+! alice
+! bob
+! Mary
+! sheep
+* Mary sheep Mary
+* bob alice alice
+* sheep Mary sheep
+? alice
+? bob
+? sheep
+?
