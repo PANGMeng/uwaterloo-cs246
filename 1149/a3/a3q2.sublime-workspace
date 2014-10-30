@@ -1,0 +1,1818 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"o",
+				"o"
+			],
+			[
+				"con",
+				"const"
+			],
+			[
+				"inclu",
+				"include"
+			],
+			[
+				"char",
+				"chars"
+			],
+			[
+				"inc",
+				"inc	#include \"…\""
+			],
+			[
+				"pay",
+				"pay"
+			],
+			[
+				"de",
+				"desc"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"e",
+				"equals"
+			],
+			[
+				"mem",
+				"memory"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"creat",
+				"createTable"
+			],
+			[
+				"table",
+				"tableName"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"incld",
+				"include"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"c",
+				"contents"
+			],
+			[
+				"new",
+				"newptr"
+			],
+			[
+				"str",
+				"strToNumber"
+			],
+			[
+				"s",
+				"stringstream"
+			],
+			[
+				"string",
+				"stringstream"
+			],
+			[
+				"fal",
+				"fails"
+			],
+			[
+				"en",
+				"endl"
+			],
+			[
+				"whi",
+				"while"
+			],
+			[
+				"arg",
+				"argc"
+			],
+			[
+				"Cand",
+				"CandidateNumber"
+			],
+			[
+				"vo",
+				"voteMode"
+			],
+			[
+				"vote",
+				"votes"
+			],
+			[
+				"val",
+				"valid"
+			],
+			[
+				"Can",
+				"CandidateNumber"
+			],
+			[
+				"in",
+				"invalidVotes"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"reg",
+				"regex"
+			],
+			[
+				"email",
+				"emailreg"
+			],
+			[
+				"hash",
+				"hashed_password"
+			],
+			[
+				"uni",
+				"unique_email"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"N",
+				"NULL"
+			],
+			[
+				"end",
+				"endphp	endphp"
+			],
+			[
+				"sport",
+				"sport-desc"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"cu",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"las",
+				"lastIndexOf"
+			],
+			[
+				"ma",
+				"maw	max-width"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"p",
+				"p	padding"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"all",
+				"allstar"
+			],
+			[
+				"pro",
+				"propopup"
+			],
+			[
+				"pop",
+				"popup-gallery"
+			],
+			[
+				"font",
+				"font"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"demo",
+				"demo-track-link"
+			],
+			[
+				"error",
+				"error"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"year",
+				"yearly_fees_wo_ads"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"top",
+				"top-tel"
+			],
+			[
+				"head",
+				"head-chat"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"pb",
+				"prebar"
+			],
+			[
+				"spor",
+				"sport-sites"
+			],
+			[
+				"di",
+				"d-i	display: inline;"
+			],
+			[
+				"form",
+				"form"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bn",
+				"bd-n	border: none;"
+			],
+			[
+				"pri",
+				"pricing-third"
+			],
+			[
+				"casl",
+				"casl-box"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"phone",
+				"phone-number"
+			],
+			[
+				"too",
+				"toolbox"
+			],
+			[
+				"bgs",
+				"bgsz	background-size"
+			],
+			[
+				"fe",
+				"feature"
+			],
+			[
+				"fea",
+				"features"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"desc",
+				"desc-cont"
+			],
+			[
+				"1e",
+				"122e4d"
+			],
+			[
+				"th",
+				"team-header"
+			],
+			[
+				"me",
+				"media"
+			],
+			[
+				"te",
+				"testimonial"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"rea",
+				"readjust_heights"
+			],
+			[
+				"feat",
+				"feature-content"
+			],
+			[
+				"rjh",
+				"readjust_height"
+			],
+			[
+				"third",
+				"thirds"
+			],
+			[
+				"thi",
+				"thirds"
+			],
+			[
+				"list",
+				"listsports"
+			],
+			[
+				"fons",
+				"font-style"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"ch",
+				"changePrice"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"sc",
+				"script	Tag"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"9e",
+				"9e1b1f"
+			],
+			[
+				"sct",
+				"section	Tag"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"box",
+				"boxeslist"
+			],
+			[
+				"chil",
+				"children"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"error_",
+				"error_reporting"
+			],
+			[
+				"conn",
+				"conn"
+			],
+			[
+				"connt",
+				"connection"
+			],
+			[
+				"Swift",
+				"Swift_Mailer"
+			],
+			[
+				"Swif",
+				"Swift_Mailer"
+			],
+			[
+				"emai",
+				"email_address"
+			],
+			[
+				"svg",
+				"svg_prev"
+			],
+			[
+				"load",
+				"loadqueue"
+			],
+			[
+				"rep",
+				"replaceAll"
+			],
+			[
+				"heig",
+				"height"
+			],
+			[
+				"he",
+				"heightdiff"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"adds",
+				"addsvgtoqueue"
+			],
+			[
+				"ema",
+				"email-address"
+			],
+			[
+				"teaser",
+				"teasertitle"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"pr",
+				"prov-state"
+			],
+			[
+				"backg",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "a3q2.cc",
+			"settings":
+			{
+				"buffer_size": 4061,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "istring.h",
+			"settings":
+			{
+				"buffer_size": 905,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "istring.cc",
+			"settings":
+			{
+				"buffer_size": 2463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#ifndef __IOSTREAM__\n#define __IOSTREAM__\n\n#include <iostream>\n\n#endif // __IOSTREAM__\n\n#include \"istring.cc\"\n\nusing namespace std;\n\nint main() {\n	iString l;\n	l.chars = new char[8];\n	l.chars[0] = 'i';\n	l.chars[1] = 'd';\n	l.chars[2] = 'o';\n	l.chars[3] = 'n';\n	l.chars[4] = 't';\n	l.chars[5] = 'k';\n	l.length = 6;\n	iString m(\"ohno\");\n	cout << \"wow: \" << l << endl;\n	cout << \"gr8: \" << m << endl;\n	iString n;\n	n = \"omg\";\n	cout << \"omg: \" << n << endl;\n	iString g = n;\n	cout << \"omf: \" << g << endl;\n	iString r = n+g;\n	cout << \"omh: \" << r << endl;\n	return 0;\n}",
+			"file": "testharness.cc",
+			"file_size": 614,
+			"file_write_time": 1414195216000000,
+			"settings":
+			{
+				"buffer_size": 556,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"run",
+				"Build: Run"
+			],
+			[
+				"ckin",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"Snippet: cla",
+				"Snippet: class-..-(class)"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wrp",
+				"Word Wrap: Toggle"
+			],
+			[
+				"synphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"synpp",
+				"Set Syntax: PHP"
+			],
+			[
+				"sycss",
+				"Set Syntax: CSS"
+			],
+			[
+				"synbash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"synshell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"pcntlin",
+				"Package Control: Install Package"
+			],
+			[
+				"pacont",
+				"Package Control: Add Repository"
+			],
+			[
+				"snihtml",
+				"Snippet: html"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"snihtml	",
+				"Snippet: html"
+			],
+			[
+				"synhtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"converttabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"match",
+				"BracketHighlighter: Match Brackets (ignore threshold)"
+			],
+			[
+				"mat",
+				"BracketHighlighter: Match Brackets (ignore threshold)"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"convtabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"css",
+				"Tidy CSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"intab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sshtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"yml",
+				"Set Syntax: YAML"
+			],
+			[
+				"packconin",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"indenctb",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"syntwig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"sytwi",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
+			],
+			[
+				"syjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"shtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"shtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"package controlinst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jeremy/GitHub/cs246/1149/a3/calc.cc",
+		"/Users/jeremy/Library/Application Support/Sublime Text 2/Packages/C++/include_guards.sublime-snippet",
+		"/Users/jeremy/GitHub/cs246/1149/a3/calc.h",
+		"/Users/jeremy/GitHub/cs246/1149/a3/calcMain.cc",
+		"/Users/jeremy/GitHub/cs246/1149/a3/istring.h",
+		"/Users/jeremy/GitHub/cs246/1149/lectures/c++/WalletExpense.cpp",
+		"/Users/jeremy/GitHub/cs246/1149/lectures/shell/changeall",
+		"/Users/jeremy/GitHub/cs246/1149/lectures/shell/changeall.sh",
+		"/Users/jeremy/GitHub/cs246/1149/a3/a3q2/untitled",
+		"/Applications/MAMP/htdocs/address.php",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q6.cc",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/oneCandidateOneVote.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/oneCandidateOneVote.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/args.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/args.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/args.args",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/noValidVotes.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/noValidVotes.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/noVotes.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/noVotes.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/oneCandidateOneVoter.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/oneCandidateOneVoter.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/negativeVotes.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/negativeVotes.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/oneVoter.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q5/oneVoter.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/float.cc",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q3.txt",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q2/example.out",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q2/example.in",
+		"/Users/jeremy/GitHub/cs246/1149/a2/a2q2/onlyPositiveZero.in",
+		"/Applications/MAMP/htdocs/guid_test.php",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/_header.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/demo_submit.php",
+		"/Users/jeremy/GitHub/cs246/1149/a1/TestSuiteREADME.txt",
+		"/Users/jeremy/GitHub/cs246/1149/a1/mySuite.txt",
+		"/Users/jeremy/GitHub/cs246/1149/a1/HowSimilar",
+		"/Users/jeremy/GitHub/cs246/1149/a1/mush.out",
+		"/Users/jeremy/GitHub/cs246/1149/a1/mush.args",
+		"/Users/jeremy/GitHub/cs246/1149/a1/mush.in",
+		"/Users/jeremy/GitHub/cs246/1149/a1/runSuite",
+		"/Users/jeremy/GitHub/cs246/1149/a1/untitled.sh",
+		"/Users/jeremy/GitHub/cs246/1149/a1/runSuite.sh",
+		"/Users/jeremy/GitHub/cs246/1149/a1/file2.txt",
+		"/Users/jeremy/GitHub/cs246/1149/a1/file1.txt",
+		"/Applications/MAMP/htdocs/sign_up.html",
+		"/Users/jeremy/GitHub/cs246/1149/a1/myfile.txt",
+		"/Users/jeremy/GitHub/cs246/1149/a1/paydaythismonth.sh",
+		"/Users/jeremy/GitHub/cs246/1149/a1/swap",
+		"/Users/jeremy/Library/Application Support/Sublime Text 2/Packages/User/endphp.sublime-snippet",
+		"/Users/jeremy/Library/Application Support/Sublime Text 2/Packages/XML/php-echo.sublime-snippet",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/_footer.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/pricing.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/demo.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/index.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/css/style.css",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/our-sports.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/js/calculate_price.js",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/feature.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/sport.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/js/imagepopups.js",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/css/popup.css",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/js/lazy.js",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/js/responsivemobilemenu.js",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/listing.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/css/base.css",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/css/responsivemobilemenu.css",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/.htaccess",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/css/skeleton.css",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/index.html",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/files/icons/trophy.svg",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/files/icons/teams.svg",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/files/icons/check.svg",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/files/icons/play.svg",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/googleca8b975efc83232e.html",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/featurespage.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/keyfacts.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/app/view/_footer.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/js/readjust_heights.js",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/teampage.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/app/cache/profiler/16/b8/28b816",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/plainpage.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/oldpricing.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/toolbox-listing.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/toolbox.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/toolboxpage.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/app/config/contenttypes.yml",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/app/theme_defaults/_sub_taxonomylinks.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/entry.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/sftp-config.json",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/js/owl.js",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/thing.txt",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/base-2013/index.twig",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/index.php",
+		"/Users/jeremy/Google Drive/Projects/GL-Sales/html/bolt/theme/goalline/js/carousel-height.js",
+		"/Users/jeremy/Downloads/header.php",
+		"/Users/jeremy/Documents/GOALLINE/ssh -i jrutledge.pem jrutledge@54.225.214.255",
+		"/Users/jeremy/Library/Application Support/Sublime Text 2/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/jeremy/Library/Application Support/Sublime Text 2/Packages/User/SFTP.sublime-settings",
+		"/Users/jeremy/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"sublime"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"str",
+			"ostream",
+			"other",
+			"__STDIO__",
+			"data",
+			"n.",
+			"inline iString& operator+(const iString& self, const iString& other)",
+			"inline iString& operator+(const iString& self, const iString& other) {\n	iString * str = new iString;\n	str->length = self.length + other.length;\n	while (str->capacity < self.length + other.length) {\n		str->capacity *= 2;\n	}\n	str->chars = new char[str->capacity];\n	for (int i = 0; i < self.length; ++i) {\n		str->chars[i] = self.chars[i];\n	}\n	for (int i = 0; i < other.length; ++i){\n		str->chars[self.length + i] = other.chars[i];\n	}\n	return *str;\n}",
+			"i->",
+			"i",
+			"snippet",
+			"istring",
+			"endif",
+			"n",
+			"g",
+			"this.",
+			"self",
+			"oper",
+			"void ",
+			"oper",
+			"and",
+			"done",
+			"</label>",
+			"<li>",
+			"p",
+			"\" id=\"",
+			"field",
+			"collapse",
+			"button",
+			"  ",
+			">\n",
+			"llama",
+			"size",
+			"capacity",
+			"string",
+			"keepGoing",
+			"i",
+			"v",
+			" \n",
+			"  ",
+			" ",
+			"double",
+			"float",
+			"-",
+			" ",
+			"a",
+			"success",
+			"echo",
+			"email",
+			"$valid && ",
+			" = $_POST['",
+			";} ?></td>",
+			"email",
+			"fname",
+			" && $valid",
+			"isset($_POST['",
+			"$_POST['",
+			" = \"ERROR\";",
+			"ERROR",
+			"email",
+			"\"password\"",
+			"password",
+			"Password",
+			"password",
+			"resume",
+			"Database",
+			"database",
+			"Users",
+			"fname",
+			"lname",
+			"Users",
+			"	?>",
+			"FEATURESPAGE",
+			"/* =======",
+			"/* ===========",
+			"===========",
+			"32px",
+			"32",
+			"mysport.",
+			"li><a",
+			"Annual",
+			"One Time",
+			"<p>Annual",
+			"'<p>",
+			":</p>",
+			"p>",
+			"One",
+			":</p>",
+			"About ads",
+			".sport-header",
+			"Set Up",
+			"%;",
+			"Learn more about ads",
+			".sport-demo",
+			"Example",
+			"$____",
+			"url",
+			"header",
+			"desc }}</p>",
+			"=",
+			"popup\" style=\"display:none;\"",
+			"getElementById",
+			"pro",
+			"Pro",
+			"pro",
+			"Pro",
+			"pro",
+			"data.",
+			"push",
+			"example_data",
+			"'+\n								'",
+			"'+\n									'",
+			"<a class=\"",
+			"example-title",
+			"designDescription",
+			"title",
+			"username",
+			"userAvatarUrl",
+			"username: \"",
+			"userLocation",
+			"  ",
+			"include",
+			"$message",
+			".post",
+			"table",
+			".mfp-counter",
+			"title=\"{{ record.",
+			"files/{{ record."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "a3q2.cc",
+					"settings":
+					{
+						"buffer_size": 4061,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1159,
+								1159
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "istring.h",
+					"settings":
+					{
+						"buffer_size": 905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								897,
+								836
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "istring.cc",
+					"settings":
+					{
+						"buffer_size": 2463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2313,
+								2313
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2077.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "testharness.cc",
+					"settings":
+					{
+						"buffer_size": 556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								463,
+								463
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 148.0
+	},
+	"output.sftp":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"style",
+				"theme/goalline/css/style.css"
+			],
+			[
+				"osp",
+				"theme/goalline/our-sports.twig"
+			],
+			[
+				"sport",
+				"theme/goalline/sport.twig"
+			],
+			[
+				"ours",
+				"theme/goalline/our-sports.twig"
+			],
+			[
+				"pri",
+				"theme/goalline/pricing.twig"
+			],
+			[
+				"caluc",
+				"theme/goalline/js/calculate_price.js"
+			],
+			[
+				"ospo",
+				"theme/goalline/our-sports.twig"
+			],
+			[
+				"popup",
+				"theme/goalline/css/popup.css"
+			],
+			[
+				"pricing",
+				"theme/goalline/pricing.twig"
+			],
+			[
+				"calc",
+				"theme/goalline/js/calculate_price.js"
+			],
+			[
+				"calcprice",
+				"theme/goalline/js/calculate_price.js"
+			],
+			[
+				"glindextw",
+				"theme/goalline/index.twig"
+			],
+			[
+				"demo.twig",
+				"theme/goalline/demo.twig"
+			],
+			[
+				"demo",
+				"demo_submit.php"
+			],
+			[
+				"imagep",
+				"theme/goalline/js/imagepopups.js"
+			],
+			[
+				"rmmjs",
+				"theme/goalline/js/responsivemobilemenu.js"
+			],
+			[
+				"popup.css",
+				"theme/goalline/css/popup.css"
+			],
+			[
+				"",
+				"theme/goalline/pricing.twig"
+			],
+			[
+				"ds",
+				"demo_submit.php"
+			],
+			[
+				"popu",
+				"theme/goalline/css/popup.css"
+			],
+			[
+				"calcu",
+				"theme/goalline/js/calculate_price.js"
+			],
+			[
+				"featur",
+				"theme/goalline/feature.twig"
+			],
+			[
+				"pricin",
+				"theme/goalline/pricing.twig"
+			],
+			[
+				"demotw",
+				"theme/goalline/demo.twig"
+			],
+			[
+				"basecss",
+				"theme/goalline/css/base.css"
+			],
+			[
+				"htac",
+				".htaccess"
+			],
+			[
+				"demotwig",
+				"theme/goalline/demo.twig"
+			],
+			[
+				"demot",
+				"theme/goalline/demo.twig"
+			],
+			[
+				"ourps",
+				"theme/goalline/our-sports.twig"
+			],
+			[
+				"rmmcss",
+				"theme/goalline/css/responsivemobilemenu.css"
+			],
+			[
+				"gl_footer",
+				"theme/goalline/_footer.twig"
+			],
+			[
+				"glheadertwig",
+				"theme/goalline/_header.twig"
+			],
+			[
+				"demosu",
+				"demo_submit.php"
+			],
+			[
+				"calcuprjs",
+				"theme/goalline/js/calculate_price.js"
+			],
+			[
+				"index",
+				"theme/goalline/index.html"
+			],
+			[
+				"calcjs",
+				"theme/goalline/js/calculate_price.js"
+			],
+			[
+				"checksvg",
+				"files/icons/check.svg"
+			],
+			[
+				"teams",
+				"files/icons/teams.svg"
+			],
+			[
+				"trphysvg",
+				"files/icons/trophy.svg"
+			],
+			[
+				"playsvg",
+				"files/icons/play.svg"
+			],
+			[
+				"skel",
+				"theme/goalline/css/skeleton.css"
+			],
+			[
+				"gl_foot",
+				"theme/goalline/_footer.twig"
+			],
+			[
+				"gl_hed",
+				"theme/goalline/_header.twig"
+			],
+			[
+				"glindex",
+				"theme/goalline/index.twig"
+			],
+			[
+				"ouspor",
+				"theme/goalline/our-sports.twig"
+			],
+			[
+				"footer",
+				"theme/goalline/_footer.twig"
+			],
+			[
+				"demosub",
+				"demo_submit.php"
+			],
+			[
+				"base",
+				"theme/goalline/css/base.css"
+			],
+			[
+				"featurs",
+				"theme/goalline/featurespage.twig"
+			],
+			[
+				"keyfacts",
+				"theme/goalline/keyfacts.twig"
+			],
+			[
+				"glfooter",
+				"theme/goalline/_footer.twig"
+			],
+			[
+				"sports",
+				"theme/goalline/our-sports.twig"
+			],
+			[
+				"1286",
+				"app/cache/profiler/16/b8/28b816"
+			],
+			[
+				"index.twig",
+				"theme/goalline/index.twig"
+			],
+			[
+				"featu",
+				"theme/goalline/feature.twig"
+			],
+			[
+				"submitphp",
+				"demo_submit.php"
+			],
+			[
+				"ske",
+				"theme/goalline/css/skeleton.css"
+			],
+			[
+				"ind",
+				"theme/goalline/index.twig"
+			],
+			[
+				"glindextwig",
+				"theme/goalline/index.twig"
+			],
+			[
+				"teampag",
+				"theme/goalline/teampage.twig"
+			],
+			[
+				"featr",
+				"theme/goalline/featurespage.twig"
+			],
+			[
+				"plain",
+				"theme/goalline/plainpage.twig"
+			],
+			[
+				"teamp",
+				"theme/goalline/teampage.twig"
+			],
+			[
+				"toolbox",
+				"theme/goalline/toolbox-listing.twig"
+			],
+			[
+				"gl_header",
+				"theme/goalline/_header.twig"
+			],
+			[
+				"_header",
+				"theme/goalline/_header.twig"
+			],
+			[
+				"plainpa",
+				"theme/goalline/plainpage.twig"
+			],
+			[
+				"toobxpg",
+				"theme/goalline/toolboxpage.twig"
+			],
+			[
+				"stylecss",
+				"theme/goalline/css/style.css"
+			],
+			[
+				"gllisting",
+				"theme/goalline/listing.twig"
+			],
+			[
+				"tool",
+				"theme/goalline/toolbox.twig"
+			],
+			[
+				"toolb",
+				"theme/goalline/toolboxpage.twig"
+			],
+			[
+				"sty",
+				"theme/goalline/css/style.css"
+			],
+			[
+				"style.css",
+				"theme/goalline/css/style.css"
+			],
+			[
+				"content",
+				"app/config/contenttypes.yml"
+			],
+			[
+				"taxon",
+				"app/theme_defaults/_sub_taxonomylinks.twig"
+			],
+			[
+				"toob",
+				"theme/goalline/toolboxpage.twig"
+			],
+			[
+				"keyfac",
+				"theme/goalline/keyfacts.twig"
+			],
+			[
+				"skeleto",
+				"theme/goalline/css/skeleton.css"
+			],
+			[
+				"keyfa",
+				"theme/goalline/keyfacts.twig"
+			],
+			[
+				"lazy",
+				"theme/goalline/js/lazy.js"
+			],
+			[
+				"foot",
+				"theme/goalline/_footer.twig"
+			],
+			[
+				"glnfooter",
+				"theme/goalline/_footer.twig"
+			],
+			[
+				"owjs",
+				"theme/goalline/js/owl.js"
+			],
+			[
+				"feat",
+				"theme/goalline/featurespage.twig"
+			],
+			[
+				"indextw",
+				"theme/goalline/index.twig"
+			],
+			[
+				"skele",
+				"theme/goalline/css/skeleton.css"
+			],
+			[
+				"lazyjs",
+				"theme/goalline/js/lazy.js"
+			],
+			[
+				"indextwig",
+				"theme/goalline/index.twig"
+			],
+			[
+				"stycss",
+				"theme/goalline/css/style.css"
+			],
+			[
+				"goallineheader",
+				"theme/goalline/_header.twig"
+			],
+			[
+				"header",
+				"theme/goalline/_header.twig"
+			],
+			[
+				"indtwig",
+				"theme/goalline/index.twig"
+			],
+			[
+				"intwig",
+				"theme/base-2013/index.twig"
+			],
+			[
+				"feature",
+				"theme/goalline/feature.twig"
+			],
+			[
+				"owljs",
+				"theme/goalline/js/owl.js"
+			],
+			[
+				"keyfact",
+				"theme/goalline/keyfacts.twig"
+			],
+			[
+				"res",
+				"theme/goalline/css/responsivemobilemenu.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true
+}

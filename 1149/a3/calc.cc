@@ -2,27 +2,6 @@
 #include "calc.h"
 #endif
 
-
-// struct Calc {
-// 	Calc();
-// 	Calc(const Calc &other);
-
-// 	bool error;
-// 	int display;
-// 	char oper;
-// 	int result;
-// 	int memory;
-
-// 	void digit(int digit);
-// 	void op(char oper);
-// 	void equals();
-// 	void memPlus();
-// 	void memClear();
-// 	void memRecall();
-// 	bool isError() const;
-// 	void allClear();
-// };
-
 Calc::Calc() { // constructor
 	allClear();
 }
@@ -53,6 +32,11 @@ void Calc::op(char oper) { // Simulates press of 'oper' operator key
 }
 
 void Calc::equals() {
+	if (error) {
+		display = 0;
+		result = 0;
+		return;
+	}
 	int res = display; // default result value
 	switch(oper) {
 		case '+':
@@ -66,7 +50,13 @@ void Calc::equals() {
 			break;
 		case '/':
 			if (display != 0) {
-				res = result / display;
+				#ifdef DEBUG
+					std::cerr << "Result: " << result << std::endl;
+					std::cerr << "Display: " << display << std::endl;
+					std::cerr << "r\%d: " << result%display << std::endl;
+					std::cerr << "r - r\%d: " << (result - result%display) << std::endl;
+				#endif
+				res = (result - result%display)/display;
 			} else {
 				error = true;
 			}
@@ -80,9 +70,11 @@ void Calc::equals() {
 void Calc::memPlus() { // Simulates M+ press
 	memory += display;
 }
+
 void Calc::memClear() { // Simulates MC press
 	memory = 0;
 }
+
 void Calc::memRecall() { // Simulates MR press
 	display = memory;
 }
@@ -94,8 +86,7 @@ bool Calc::isError() const { // returns error flag
 void Calc::allClear() {
 	error = false;
 	display = 0;
-	oper = ' '; // remember to check if oper is ' '
-	// couldn't think of a better "blank" character
+	oper = ' '; // "blank" character
 	result = 0;
 	memory = 0;
 }

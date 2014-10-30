@@ -1,6 +1,6 @@
 #include <iostream>
 #include "calc.h"
-#include "a3q1.cc"
+#include "calc.cc"
 
 using namespace std;
 

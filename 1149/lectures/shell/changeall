@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "look $0"
+echo "argument $1"
+
+disarm=`find . -name *.cc`
+
+for word in ${disarm}; do
+	echo ${word}
+done
