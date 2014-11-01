@@ -1,0 +1,1 @@
+Note, in particular, that when the moves come from a file, your program prints to stdout the move that was made (e.g., (plays 0 0 S) above).

@@ -1,6 +1,16 @@
 #include "node.h"
 #include <iostream>
 #include <sstream>
+#include <fstream>
+
+// I decided to use a linked list approach to the node classes instead of a binary tree.
+
+// For a node class, opponent 2 points to the next node in the list. 
+// The main program keeps the first Node. When a Node is deleted it deletes the next node
+
+// Nodes can be used in one of two contexts here:
+// 1) As a Player
+// 2) As a game
 
 Node::Node(const std::string &s): name(s) {
 	opponent1 = NULL;
@@ -11,15 +21,18 @@ Node::~Node() {
 	if (NULL != opponent2) {
 		delete opponent2;
 	}
+	#ifdef DEBUG
+	std::cout << "Deleted " << name << std::endl;
+	#endif
 }
 
 // For Players stored in Nodes:
 // 
 // name = Player's Name
-// opponent1 = Match Lost (if NULL, then player hasn't lost anything)
+// opponent1 = pointer to Game node that the player Lost (if NULL, then player hasn't lost anything)
 // opponent2 = Next Player
 
-void AddPlayer(std::string name, Node * &firstPlayer) {
+void AddPlayer(std::string name, Node * &firstPlayer) { // Add a Player Node to the list of Players. Retains order
 	Node * tmp = firstPlayer;
 	if (NULL == tmp) {
 		firstPlayer = new Node(name);
@@ -77,7 +90,7 @@ void Match(std::string name1, std::string name2, std::string winner, Node * firs
 	}
 }
 
-void PrintUndefeated(Node* firstPlayer) {
+void PrintUndefeated(Node* firstPlayer) { // Goes through linked list and prints the names of all those with a NULL opponent1 field - meaning they are undefeated
 	Node * tmp = firstPlayer;
 	while(NULL != tmp) {
 		#ifdef DEBUG
@@ -93,7 +106,7 @@ void PrintUndefeated(Node* firstPlayer) {
 	#endif
 }
 
-void PrintMatches(std::string name, Node* firstMatch) {
+void PrintMatches(std::string name, Node* firstMatch) { // Walks through linked list of Matches and prints match details of any matches with the name field "name"
 	Node * tmp = firstMatch;
 	while(NULL != tmp) {
 		#ifdef DEBUG
@@ -110,7 +123,7 @@ void PrintMatches(std::string name, Node* firstMatch) {
 	}
 }
 
-void Cheat(std::string name, Node* firstPlayer, Node* firstMatch) {
+void Cheat(std::string name, Node* firstPlayer, Node* firstMatch) { // executes functionality of '-' command
 	Node * tmp = firstMatch;
 	while(NULL != tmp && tmp->name != name) {
 		tmp = tmp->opponent2;
@@ -125,7 +138,7 @@ void Cheat(std::string name, Node* firstPlayer, Node* firstMatch) {
 	}
 }
 
-void parseLine(std::string line, Node * firstPlayer, Node * firstMatch) {
+void parseLine(std::string line, Node * firstPlayer, Node * firstMatch) { // Given one line of input, will decide which Node function to call
 	std::stringstream ss;
 	ss << line;
 	char s;
@@ -166,15 +179,23 @@ void parseLine(std::string line, Node * firstPlayer, Node * firstMatch) {
 			ss >> a1;
 			Cheat(a1, firstPlayer, firstMatch);
 			break;
-		// case 'i':
-		// 	ss >> a1 >> a2;
-		// 	// std::string s;
-		// 	// ifstream myfile (a2, ios::binary);
-		// 	// while(getline(myfile,s)) {
-		// 	// 	parseLine(s, firstPlayer, firstMatch);
-		// 	// }
-		// 	// myfile.close();\
-		// 	break;
+		case 'i':
+			#ifdef DEBUG
+			// std::cout << "Added " << name << " after " << tmp->name << std::endl;
+			#endif
+			ss >> a1;
+			std::string s;
+			std::ifstream myfile;
+			myfile.open(a1.c_str());
+			while(getline(myfile,s)) {
+
+				#ifdef DEBUG
+				std::cout << "Line: " << s << std::endl;
+				#endif
+				parseLine(s, firstPlayer, firstMatch);
+			}
+			myfile.close();
+			break;
 	}
 }
 
