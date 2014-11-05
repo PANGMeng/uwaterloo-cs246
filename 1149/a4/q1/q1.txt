@@ -1,0 +1,15 @@
+a) The only difference between arrays and arrays2 is that they access the array variable differently - arrays iterates through the first dimension of the the array before the second, and arrays2 iterates through the second dimension of the array before the first. This is to say, in arrays, the order is a[0][0], a[0][1], a[0][2], ... a[1][0], a[1][1], ... etc.. In arrays2, the order is a[0][0], a[1][0], a[2][0], ... a[0][1], a[1][1], ... etc..
+
+b) arrays2 ran slower. Here were the results on my system:
+
+time ./arrays
+real	0m0.123s
+user	0m0.088s
+sys	0m0.027s
+
+time ./arrays2
+real	0m0.703s
+user	0m0.651s
+sys	0m0.039s
+
+c) The difference in running time is caused by the location in which the memory is accessed - that is to say, the program arrays must access the data in a similar order to the way that the data is stored in memory. Since nearby memory locations will be prepared for faster access to the cpu, accessing data in the program arrays will be faster than arrays2, because data in arrays will be in order and thus closer together than in arrays 2
