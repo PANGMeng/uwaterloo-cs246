@@ -40,9 +40,9 @@ public:
 			return 1;
 		}
 		if (NULL == root) {// if the root isn't yet set, set it to the integer
-			root = new IntExpression(i);
+			root = new IntExpression(x);
 		} else {// add int to end of stack
-			e[firstNull] = new IntExpression(i);
+			e[firstNull] = new IntExpression(x);
 			firstNull++;
 		}
 		return 0;
@@ -86,14 +86,14 @@ public:
 
 int main() {
 	// input capture variables
-	int i;
-	string s;
+	int ii;
+	string ss;
 
 	StackInterface s;
 
 	while (true) {
-		if (cin >> i) {// if input is an integer:
-			if (1 == s.addInt(i)) {
+		if (cin >> ii) {// if input is an integer:
+			if (1 == s.addInt(ii)) {
 				return 0; // if there's a stack overflow, abort
 			}
 		} else {
@@ -101,26 +101,24 @@ int main() {
 				break;
 			} else { // if input is not an integer:
 				cin.clear();
-				if (cin >> s) {// if input is a string
-					switch (s) {
-						case "+":
-							s.setTwoOper('+');
-							break;
-						case "*":
-							s.setTwoOper('*');
-							break;
-						case "/":
-							s.setTwoOper('/');
-							break;
-						case "-":
-							s.setTwoOper('-');
-							break;
-						case "ABS":
-							s.setOneOper("ABS");
-							break;
-						case "NEG":
-							s.setOneOper("NEG");
-							break;
+				if (cin >> ss) {// if input is a string
+					if ("+" == ss) {
+						s.setTwoOper('+');
+					}
+					if ("*" == ss) {
+						s.setTwoOper('*');
+					}
+					if ("/" == ss) {
+						s.setTwoOper('/');
+					}
+					if ("-" == ss) {
+						s.setTwoOper('-');
+					}
+					if ("ABS" == ss) {
+						s.setOneOper("ABS");
+					}
+					if ("NEG" == ss) {
+						s.setOneOper("NEG");
 					}
 				} else { // if input is not integer, string, or EOF, just move on
 					cin.clear();

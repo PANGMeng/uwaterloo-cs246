@@ -10,7 +10,7 @@ TwoOperator::~TwoOperator() { // Deleting an Operator Expression deletes all sub
 	delete rhs;
 }
 
-virtual int TwoOperator::interpret() {
+int TwoOperator::interpret() {
 	if (oper == '/') {
 		int l, r;
 		l = lhs->interpret();
@@ -29,9 +29,15 @@ virtual int TwoOperator::interpret() {
 	if (oper == '*') {
 		return lhs->interpret() * rhs->interpret();
 	}
+
+	#ifdef DEBUG
+	std::cerr << "TwoOperator interpretation error: ambiguous operator: '" << oper << "'" << std::endl;
+	#endif // DEBUG
+
+	return 0;
 }
 
-virtual std::string TwoOperator::print() {
+std::string TwoOperator::print() {
 	return "(" + lhs->print() + " " + oper + " " + rhs->print() + ")";
 };
 

@@ -5,10 +5,13 @@
 
 
 IntExpression::IntExpression(int value): value(value) {}
-virtual int IntExpression::Interpret() {
+
+IntExpression::~IntExpression() {}
+
+int IntExpression::interpret() {
 	return value;
 }
-virtual std::string IntExpression::print() {
-	return std::stoi(value);
+std::string IntExpression::print() {
+	return std::to_string(value);
 }
 

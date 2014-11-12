@@ -10,20 +10,28 @@ OneOperator::~OneOperator() {
 	delete expr;
 }
 
-virtual int OneOperator::interpret() {
-	if (op = "ABS") {
+int OneOperator::interpret() {
+	if ("ABS" == op) {
 		return abs(expr->interpret());
 	}
-	if (op = "NEG") {
+	if ("NEG" == op) {
 		return -(expr->interpret());
 	}
+	#ifdef DEBUG
+	std::cerr << "oneoperator interpretation error: ambiguous operator '" << op << "'" << std::endl;
+	#endif // DEBUG
+	return expr->interpret();
 }
-virtual std::string OneOperator::print() {
-	if (op = "ABS") {
-		return "|"+expr->interpret()+"|";
+std::string OneOperator::print() {
+	if ("ABS" == op) {
+		return "|"+expr->print()+"|";
 	}
-	if (op = "NEG") {
-		return "-"+expr->interpret();
+	if ("NEG" == op) {
+		return "-"+expr->print();
 	}
+	#ifdef DEBUG
+	std::cerr << "oneoperator printing error: ambiguous operator'" << op << "'" << std::endl;
+	#endif // DEBUG
+	return expr->print();
 }
 

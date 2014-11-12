@@ -5,7 +5,8 @@ class IntExpression: public Expression { // representing single integer expressi
     int value; // the integer
 public:
 	IntExpression(int value);
-	virtual int Interpret();
+	~IntExpression();
+	virtual int interpret();
 	virtual std::string print();
 };
 
