@@ -1,0 +1,14 @@
+intdiv
+neg
+negabs
+pairs
+plusneg
+t1
+addneg
+simplenumber
+singleneg
+stacko
+div
+divadd
+divmul
+douneg
