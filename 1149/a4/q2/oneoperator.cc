@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 #include "expression.h"
 #include "oneoperator.h"
@@ -12,7 +13,7 @@ OneOperator::~OneOperator() {
 
 int OneOperator::interpret() {
 	if ("ABS" == op) {
-		return abs(expr->interpret());
+		return std::abs(expr->interpret());
 	}
 	if ("NEG" == op) {
 		return -(expr->interpret());

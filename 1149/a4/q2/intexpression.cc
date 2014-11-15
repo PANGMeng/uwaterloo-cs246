@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 
 #include "expression.h"
 #include "intexpression.h"
@@ -12,6 +13,10 @@ int IntExpression::interpret() {
 	return value;
 }
 std::string IntExpression::print() {
-	return std::to_string(value);
+	std::string d;
+	std::ostringstream oss;
+	oss << value;
+	d = oss.str();
+	return d;
 }
 

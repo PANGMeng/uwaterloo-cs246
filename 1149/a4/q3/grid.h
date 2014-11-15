@@ -3,7 +3,7 @@
 #include <iostream>
 #include "cell.h"
 #include "textdisplay.h"
-#include "window.h"
+// #include "window.h"
 
 class Grid {
   Cell **theGrid;                   // The actual n x n grid. 
@@ -14,7 +14,6 @@ class Grid {
   void clearGrid();                 // Frees the theGrid field.
 
   // Add private members, if necessary.
-
 
  public:
   Grid();
@@ -28,7 +27,7 @@ class Grid {
    * Cells change colors 
    * Look through the textdisplay.h file for hints on how to do this
    */
-  bool isWon();						
+  bool isWon();
   
   void init(int n);                 // Sets up an n x n grid.  Clears old grid, if necessary.
   void change(const int & state);  // Notify Cell (0,0) of the change to new state: state 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 #include "expression.h"
 #include "intexpression.h"
 #include "twooperator.h"
@@ -24,6 +25,15 @@ public:
 	}
 	~StackInterface() {// deallocate all expressions
 		// Expressions are responsible for deallocating subexpressions when deallocated
+		#ifdef DEBUG
+		for (int i = 0; i < 10; ++i) {
+			if (NULL != e[i]) {
+				cerr << i << ": " << e[i]->print() << endl;
+			} else {
+				cerr << i << ": NULL" << endl;
+			}
+		}
+		#endif // DEBUG
 		for (int i = 0; i < 10; ++i) {
 			if (NULL != e[i]) {
 				delete e[i];
@@ -45,10 +55,16 @@ public:
 			e[firstNull] = new IntExpression(x);
 			firstNull++;
 		}
+		#ifdef DEBUG
+			cerr << "firstNull is now: " << firstNull << endl;
+		#endif // DEBUG
 		return 0;
 	}
 
 	void setTwoOper(char op) {// effectively "add +-*/ to stack"
+		#ifdef DEBUG
+			cerr << "trying to add '" << op << "' to stack" << endl;
+		#endif // DEBUG
 		if (firstNull > 1) {
 			// operator is taking two expressions off the stack
 			// operator replaces first expression on the stack
@@ -65,7 +81,13 @@ public:
 			e[0] = NULL;
 			root = new TwoOperator(ex1, ex2, op);
 			firstNull = 0;
+			#ifdef DEBUG
+				cerr << "root is now: " << root->print() << endl;
+			#endif // DEBUG
 		}
+		#ifdef DEBUG
+			cerr << "firstNull is now: " << firstNull << endl;
+		#endif // DEBUG
 	}
 
 	void setOneOper(string op) {// effectively "add NEG/ABS"
@@ -76,54 +98,67 @@ public:
 			Expression* ex = root;
 			root = new OneOperator(ex, op);
 		}
+		#ifdef DEBUG
+			cerr << "firstNull is now: " << firstNull << endl;
+		#endif // DEBUG
 	}
 
 	void write() {// called at the end of the program to indicate the result
-		cout << root->interpret() << endl;
-		cout << "= " << root->print() << endl;
+		cout << root->print() << endl;
+		cout << "= " << root->interpret() << endl;
 	}
 };
 
 int main() {
 	// input capture variables
 	int ii;
-	string ss;
+	string inp;
 
 	StackInterface s;
 
-	while (true) {
-		if (cin >> ii) {// if input is an integer:
-			if (1 == s.addInt(ii)) {
-				return 0; // if there's a stack overflow, abort
+	while (true) { // ends when eof is reached
+		if (cin >> inp) {
+			stringstream ss(inp);
+			ss >> ii;
+			if (!ss.fail()) { // ii is an integer
+				if (1 == s.addInt(ii)) {
+					return 0; // if there's a stack overflow, abort
+				}
+			} else { // inp is a string
+				#ifdef DEBUG
+					cerr << "trying to interpret the string: '" << inp << "'" << endl;
+				#endif // DEBUG
+				if ("+" == inp) {
+					#ifdef DEBUG
+						cerr << "YES Thing?" << endl;
+					#endif // DEBUG
+					s.setTwoOper('+');
+				}
+				if ("*" == inp) {
+					s.setTwoOper('*');
+				}
+				if ("/" == inp) {
+					s.setTwoOper('/');
+				}
+				if ("-" == inp) {
+					s.setTwoOper('-');
+				}
+				if ("ABS" == inp) {
+					s.setOneOper("ABS");
+				}
+				if ("NEG" == inp) {
+					s.setOneOper("NEG");
+				}
 			}
 		} else {
-			if (cin.eof()) { // if the end of the file is reached, break the loop
+			if (cin.eof()) {// if the end of the file is reached, break the loop
 				break;
-			} else { // if input is not an integer:
+			} else { // the input is unreadable somehow, and should be skipped
+				#ifdef DEBUG
+					cerr << "impossible input - ABORT" << endl;
+				#endif // DEBUG
 				cin.clear();
-				if (cin >> ss) {// if input is a string
-					if ("+" == ss) {
-						s.setTwoOper('+');
-					}
-					if ("*" == ss) {
-						s.setTwoOper('*');
-					}
-					if ("/" == ss) {
-						s.setTwoOper('/');
-					}
-					if ("-" == ss) {
-						s.setTwoOper('-');
-					}
-					if ("ABS" == ss) {
-						s.setOneOper("ABS");
-					}
-					if ("NEG" == ss) {
-						s.setOneOper("NEG");
-					}
-				} else { // if input is not integer, string, or EOF, just move on
-					cin.clear();
-					cin.ignore();
-				}
+				cin.ignore();
 			}
 		}
 	}
