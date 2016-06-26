@@ -41,13 +41,27 @@ void Cell::addNeighbour(Cell *neighbour) { // adds a neighbouring cell
 
 void Cell::notify( const int & change) { // run by 0,0 cell on change
 	setState(change);
+	#ifdef DEBUG
+		std::cerr << "Cell::notify: notifying " << numNeighbours << " neighbours ...omg" << std::endl;
+	#endif // DEBUG
 	for (int i = 0; i < numNeighbours; ++i) {
-		neighbours[i]->notify(state, prevState);
+		#ifdef DEBUG
+			std::cerr << "Cell::notify: notifying neighbour #" << i << std::endl;
+		#endif // DEBUG
+		if (state != prevState) {
+			neighbours[i]->notify(state, prevState);
+		} else {
+			neighbours[i]->notify(state, -1);
+		}
 	}
 }
 
 void Cell::notify(const int & current, const int & previous) { 
 	// called by neighbor when neighbor changes
+	#ifdef DEBUG
+		std::cerr << "Cell::notify: notification to change to " << current << " from " << previous << std::endl;
+		std::cerr << "\tAnd I am " << state << std::endl;
+	#endif // DEBUG
 	if (previous == state) {
 		setState(current);
 		for (int i = 0; i < numNeighbours; ++i) {

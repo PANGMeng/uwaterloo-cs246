@@ -63,25 +63,40 @@ void cNew(int n, Grid *g) { // command new n
 }
 
 void cInit(Grid *g) { // command init
+	#ifdef DEBUG
+		cerr << "in cInit" << endl;
+	#endif // DEBUG
 	string s;
-	getline(cin, s);
-	while (-1 != initIn(s, g)) {
-		getline(cin, s);
+	if (getline(cin, s)) {
+		while (-1 != initIn(s, g)) {
+			#ifdef DEBUG
+				cerr << "Read line: " << s << endl;
+			#endif // DEBUG
+			getline(cin, s);
+		}
+		#ifdef DEBUG
+			cerr << "Displaying grid: " << endl;
+		#endif // DEBUG
+		cout << (*g);
 	}
-	cout << *g;
 }
 
 void cInclude(string f, Grid *g) { // command include f
 	ifstream myfile;
-	myfile.open (f);
+	myfile.open(f.c_str());
 	string s;
 	while (getline(myfile, s)) {
 		initIn(s, g);
 	}
 	myfile.close();
+	cout << (*g);
 }
 
 int cSwitch(int s, Grid *g, int &moves) { // command switch
+	#ifdef DEBUG
+		cerr << "in cSwitch" << endl;
+	#endif // DEBUG
+
 	g->change(s);
 	moves--;
 	cout << *g;
@@ -102,6 +117,9 @@ int main() {
 
 	string s;
 	while (cin >> s) {
+		#ifdef DEBUG
+			cerr << "Input: " << s << endl;
+		#endif // DEBUG
 		// "switch" through the possible commands
 
 		if ("new" == s) {
@@ -131,12 +149,18 @@ int main() {
 		if ("switch" == s) {
 			int n;
 			cin >> n;
+			#ifdef DEBUG
+				cerr << "switching " << n << "..." << endl;
+			#endif // DEBUG
 			if (1 == cSwitch(n, g, moves)) {
 				break;
 			}
 		}	
 	}
 
+	#ifdef DEBUG
+		cerr << "It is done" << endl;
+	#endif // DEBUG
 
 	delete g;
 	return 0;

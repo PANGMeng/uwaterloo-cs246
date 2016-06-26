@@ -1,6 +1,6 @@
 CXX = g++
-CXXFLAGS = -Wall -MMD
-EXEC = a4q2
+CXXFLAGS = -Wall -MMD 
+EXEC = flood
 OBJECTS = main.o cell.o grid.o textdisplay.o
 DEPENDS = ${OBJECTS:.o=.d}
 

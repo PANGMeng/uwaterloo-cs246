@@ -4,6 +4,8 @@
 // int gridSize;    // Size of the grid (n)
 // TextDisplay *td; // The text display.
 
+using namespace std;
+
 void Grid::clearGrid(){ // Frees the theGrid field.
 	if (NULL != theGrid) {
 		for (int i = 0; i < gridSize; i++) {
@@ -81,14 +83,39 @@ void Grid::init(int n) { // Sets up an n x n grid.  Clears old grid, if necessar
 }
 
 void Grid::change(const int & state) { // Notify Cell (0,0) of the change to new state: state 
+	#ifdef DEBUG
+		cerr << "Grid::change: switching " << state << "..." << endl;
+	#endif // DEBUG
 	theGrid[0][0].notify(state);
 }
 
 void Grid::init(int r, int c, int state) { //set the state for r,c to state
-	theGrid[r][c].setState(state);
+	bool test[6];
+
+	test[0] = (0 <= r);
+	test[1] = (0 <= c);
+	test[2] = (gridSize > r);
+	test[3] = (gridSize > c);
+	test[4] = (state >= 0);
+	test[5] = (state <= 4);
+
+	if (test[0] && test[1] && test[2] && test[3] && test[4] && test[5]) {
+		theGrid[r][c].setState(state);
+		#ifdef DEBUG
+			cerr << "Cell at (" << r << ", " << c << ") is now " << state << "." << endl;
+		#endif // DEBUG
+	} 
+	#ifdef DEBUG
+	else {
+		cerr << "Error setting cell (" << r << ", " << c << ") to color " << state << "." << endl;
+		for(unsigned i = 0; i < 6; ++i) {
+			cout << "Test #" << i << " = " << test[i] << endl;
+		}
+	}
+	#endif // DEBUG
 }
 
-std::ostream &operator<<(std::ostream &out, const Grid &g) {
+ostream &operator<<(ostream &out, const Grid &g) {
 	out << *(g.td);
 	return out;
 }
